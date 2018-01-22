@@ -6,13 +6,11 @@ using UnityEngine.UI;
 public class Move : MonoBehaviour {
 
 	//private Rigidbody rb;
-	public float thrust = 1;
-	public float pitch;
-	public float yaw;
-	public float roll;
-	public float boost;
-	Vector3 gas;
-	[SerializeField]float speed = 1;
+	private float thrust;
+	private float pitch;
+	private float yaw;
+	private float roll;
+
 	[SerializeField]float YawSensitivity = 1;
 	[SerializeField]float RollSensitivity = 1;
 	[SerializeField]float PitchSensitivity = 1;
