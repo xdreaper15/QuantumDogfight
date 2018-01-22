@@ -5,24 +5,38 @@ using UnityEngine.UI;
 
 public class Move : MonoBehaviour {
 
-	private Rigidbody rb;
-	[SerializeField]float speed = 10;
+	//private Rigidbody rb;
+	public float thrust = 1;
+	public float pitch;
+	public float yaw;
+	public float roll;
+	public float boost;
+	Vector3 gas;
+	[SerializeField]float speed = 1;
+	[SerializeField]float YawSensitivity = 1;
+	[SerializeField]float RollSensitivity = 1;
+	[SerializeField]float PitchSensitivity = 1;
+	[SerializeField]float StrafeSensitivity = 1;
+	[SerializeField]float ThrustMod = .6f;
+	public Rigidbody rb;
 
 	void Start () 
 	{
-		rb = GetComponent<Rigidbody> ();
-
+		rb = GetComponent<Rigidbody>();
 	}
 
 	void FixedUpdate ()
 	{
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
+		
+		pitch = Input.GetAxis("Vertical");
+		roll = Input.GetAxis("Horizontal");
+		yaw = Input.GetAxis ("Strafe");
+		rb.AddRelativeTorque(pitch * PitchSensitivity, 0, -roll * RollSensitivity);
+		rb.AddRelativeForce (yaw * YawSensitivity, 0, 0);
 
-		Vector3 movement = new Vector3 (moveHorizontal, 0, 0);
-		Vector3 rotation = new Vector3 (0, 0, moveVertical);
-		rb.AddForce (movement * speed);
-		rb.AddRelativeTorque (rotation * speed);
+		thrust = Input.GetAxis ("Thrust");
+		rb.velocity = transform.forward * thrust * ThrustMod;
+
 
 	}
 }

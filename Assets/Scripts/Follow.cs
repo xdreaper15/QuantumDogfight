@@ -16,8 +16,8 @@ public class Follow : MonoBehaviour {
 		
 	// Update is called once per frame
 	void LateUpdate () {
-		transform.position = Player.position + Player.rotation * offset;
-		transform.LookAt (Player.position);
+//		transform.position = Player.position + Player.rotation * offset;
+//		transform.LookAt (Player.position);
 
 	}
 }
