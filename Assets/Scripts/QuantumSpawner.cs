@@ -21,7 +21,7 @@ public class QuantumSpawner : MonoBehaviour
 	public const int maxSpawnRadius = 50; //max radius at which Asteroids spawn
 	private Quaternion astRotation;
 	private Vector3 astSpawn;
-	private float warningSize;
+	private float warningSize; 
 	private float astSize;
 	private float astWarnBuffer = 1.08F;
 	private int astTorqX;
@@ -79,7 +79,7 @@ public class QuantumSpawner : MonoBehaviour
 	void SpawnAsteroid()
 	{
 		GameObject astClone = (GameObject)Instantiate (AsteroidClone, astSpawn, astRotation); // Spawn Asteroid Clone
-<<<<<<< HEAD
+
 
 		astTorqX = Random.Range (-maxAstTorq, maxAstTorq); //establish random X-axis Torque
 		astTorqY = Random.Range (-maxAstTorq, maxAstTorq); //establish random Y-axis Torque
@@ -91,19 +91,4 @@ public class QuantumSpawner : MonoBehaviour
 		Destroy(astClone, 20f); //Destroy Asteroid Clone
 		currentAst++; // Adds 1 to Asteroid Number
 	}
-		
-=======
-
-		astTorqX = Random.Range (-maxAstTorq, maxAstTorq); //establish random X-axis Torque
-		astTorqY = Random.Range (-maxAstTorq, maxAstTorq); //establish random Y-axis Torque
-		astTorqZ = Random.Range (-maxAstTorq, maxAstTorq); //establish random Z-axis Torque
-		AstRigid.AddRelativeTorque (transform.forward * astTorqX); //Apply established Torques
-		AstRigid.AddRelativeTorque (transform.up * astTorqY); //Apply established Torques
-		AstRigid.AddRelativeTorque (transform.right * astTorqZ); //Apply established Torques
-
-		Destroy(astClone, 20f); //Destroy Asteroid Clone
-		currentAst++; // Adds 1 to Asteroid Number
-	}
-
->>>>>>> tony
 }

@@ -141,18 +141,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7ef342880d0240b96706c8197ddb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 0
+  thrust: 1
   pitch: 0
   yaw: 0
   roll: 0
   boost: 0
   speed: 1
   YawSensitivity: 1
-  TiltSensitivity: 1
-  PitchSensitivity: 0.6
+  RollSensitivity: 1
+  PitchSensitivity: 1
   StrafeSensitivity: 1
-  ThrustMod: 0.5
-  rb: {fileID: 335346834}
+  ThrustMod: 0.6
+  rb: {fileID: 0}
 --- !u!54 &335346834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -269,17 +269,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7ef342880d0240b96706c8197ddb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 2
+  thrust: 1
   pitch: 0
   yaw: 0
   roll: 0
   boost: 0
   speed: 2
   YawSensitivity: 1
-  TiltSensitivity: 1
+  RollSensitivity: 1
   PitchSensitivity: 1
   StrafeSensitivity: 1
-  ThrustMod: 2
+  ThrustMod: 0.6
   rb: {fileID: 0}
 --- !u!64 &713460591
 MeshCollider:
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2028411858}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7a7da3deaa7b4f4f97bc5e1219157b7, type: 3}
   m_Name: 

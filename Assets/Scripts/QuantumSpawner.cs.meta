@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f7a7da3deaa7b4f4f97bc5e1219157b7
-timeCreated: 1516597899
+timeCreated: 1516602626
 licenseType: Free
 MonoImporter:
   externalObjects: {}
@@ -11,6 +11,8 @@ MonoImporter:
   - WarningField: {fileID: 1296419186215782, guid: daa0115654deb2445b48436a9735238d,
       type: 2}
   - AsteroidClone: {fileID: 1789340591374696, guid: d9a6169a0f2fb614bb374cfee00f76b4,
+      type: 2}
+  - AstRigid: {fileID: 54370448298081924, guid: d9a6169a0f2fb614bb374cfee00f76b4,
       type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
