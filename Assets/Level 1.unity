@@ -424,12 +424,13 @@ MonoBehaviour:
     type: 2}
   AsteroidClone: {fileID: 1789340591374696, guid: d9a6169a0f2fb614bb374cfee00f76b4,
     type: 2}
+  AstRigid: {fileID: 54370448298081924, guid: d9a6169a0f2fb614bb374cfee00f76b4, type: 2}
   maxAst: 20
   currentAst: 0
   currentWarning: 0
   minAstSize: 40
   maxAstSize: 80
-  maxSpawnRadius: 1
+  maxAstTorq: 1000
 --- !u!4 &2028411860
 Transform:
   m_ObjectHideFlags: 0
