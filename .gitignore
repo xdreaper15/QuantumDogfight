@@ -33,3 +33,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Scripts/Collision.cs
+Assets/Scripts/Collision.cs
+Assets/Scripts/QuantumSpawner.cs

@@ -10,6 +10,10 @@ public class Move : MonoBehaviour {
 	private float pitch;
 	private float yaw;
 	private float roll;
+<<<<<<< HEAD
+
+=======
+>>>>>>> tony
 	[SerializeField]float YawSensitivity = 1;
 	[SerializeField]float RollSensitivity = 1;
 	[SerializeField]float PitchSensitivity = 1;

@@ -37,7 +37,15 @@ Transform:
   m_GameObject: {fileID: 1296419186215782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.365, y: 1.053, z: -1.495}
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_LocalScale: {x: 46.440002, y: 46.440002, z: 46.440002}
+=======
+  m_LocalScale: {x: 47.52, y: 47.52, z: 47.52}
+>>>>>>> tony
+=======
   m_LocalScale: {x: 43.2, y: 43.2, z: 43.2}
+>>>>>>> tony
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,6 +91,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1296419186215782}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+=======
 --- !u!135 &135923981960337168
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -95,3 +105,4 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> tony
