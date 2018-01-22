@@ -14,7 +14,7 @@ public class Move : MonoBehaviour {
 	Vector3 gas;
 	[SerializeField]float speed = 1;
 	[SerializeField]float YawSensitivity = 1;
-	[SerializeField]float TiltSensitivity = 1;
+	[SerializeField]float RollSensitivity = 1;
 	[SerializeField]float PitchSensitivity = 1;
 	[SerializeField]float StrafeSensitivity = 1;
 	[SerializeField]float ThrustMod = .6f;
@@ -31,7 +31,7 @@ public class Move : MonoBehaviour {
 		pitch = Input.GetAxis("Vertical");
 		roll = Input.GetAxis("Horizontal");
 		yaw = Input.GetAxis ("Strafe");
-		rb.AddRelativeTorque(pitch * PitchSensitivity, 0, -roll * StrafeSensitivity);
+		rb.AddRelativeTorque(pitch * PitchSensitivity, 0, -roll * RollSensitivity);
 		rb.AddRelativeForce (yaw * YawSensitivity, 0, 0);
 
 		thrust = Input.GetAxis ("Thrust");
