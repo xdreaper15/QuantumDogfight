@@ -141,17 +141,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7ef342880d0240b96706c8197ddb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 10
-  pitch: 0
-  yaw: 0
-  roll: 0
-  boost: 0
-  speed: 1
   YawSensitivity: 0.3
   RollSensitivity: 0.3
   PitchSensitivity: 0.3
   StrafeSensitivity: 0.3
-  ThrustMod: 0.6
+  ThrustMod: 10
   rb: {fileID: 335346834}
 --- !u!54 &335346834
 Rigidbody:
@@ -269,12 +263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7ef342880d0240b96706c8197ddb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 1
-  pitch: 0
-  yaw: 0
-  roll: 0
-  boost: 0
-  speed: 2
   YawSensitivity: 1
   RollSensitivity: 1
   PitchSensitivity: 1
