@@ -80,7 +80,6 @@ public class QuantumSpawner : MonoBehaviour
 	{
 		GameObject astClone = (GameObject)Instantiate (AsteroidClone, astSpawn, astRotation); // Spawn Asteroid Clone
 
-<<<<<<< HEAD
 
 		astTorqX = Random.Range (-maxAstTorq, maxAstTorq); //establish random X-axis Torque
 		astTorqY = Random.Range (-maxAstTorq, maxAstTorq); //establish random Y-axis Torque
@@ -92,17 +91,5 @@ public class QuantumSpawner : MonoBehaviour
 		Destroy(astClone, 20f); //Destroy Asteroid Clone
 		currentAst++; // Adds 1 to Asteroid Number
 	}
-=======
-		astTorqX = Random.Range (-maxAstTorq, maxAstTorq); //establish random X-axis Torque
-		astTorqY = Random.Range (-maxAstTorq, maxAstTorq); //establish random Y-axis Torque
-		astTorqZ = Random.Range (-maxAstTorq, maxAstTorq); //establish random Z-axis Torque
-		AstRigid.AddRelativeTorque (transform.forward * astTorqX); //Apply established Torques
-		AstRigid.AddRelativeTorque (transform.up * astTorqY); //Apply established Torques
-		AstRigid.AddRelativeTorque (transform.right * astTorqZ); //Apply established Torques
 
-		Destroy(astClone, 20f); //Destroy Asteroid Clone
-		currentAst++; // Adds 1 to Asteroid Number
-	}
-
->>>>>>> tony
 }
