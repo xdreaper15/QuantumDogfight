@@ -19,7 +19,7 @@ public class Follow : MonoBehaviour {
 		transform.position = Player.position + Player.rotation * offset;
 		transform.LookAt (Player.position);
 
-		print ("hello world");
+		//print ("hello world");
 	}
 }
 // test	
