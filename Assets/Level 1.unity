@@ -141,19 +141,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7ef342880d0240b96706c8197ddb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
+
+
   YawSensitivity: 0.3
   RollSensitivity: 0.3
   PitchSensitivity: 0.3
   StrafeSensitivity: 0.3
   ThrustMod: 10
-=======
+
+
+  thrust: 0
+  pitch: 0
+  yaw: 0
+  roll: 0
+  boost: 0
+  speed: 1
+
   YawSensitivity: 1
-  RollSensitivity: 1
+  TiltSensitivity: 1
   PitchSensitivity: 0.6
   StrafeSensitivity: 1
-  ThrustMod: 25
->>>>>>> tony
+
+  ThrustMod: 25
+
+  ThrustMod: 0.5
+
   rb: {fileID: 335346834}
 --- !u!54 &335346834
 Rigidbody:
@@ -164,11 +176,14 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-<<<<<<< HEAD
+
+
   m_AngularDrag: 6
-=======
-  m_AngularDrag: 15
->>>>>>> tony
+
+  m_AngularDrag: 15
+
+  m_AngularDrag: 3
+
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -275,8 +290,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7ef342880d0240b96706c8197ddb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 2
+  pitch: 0
+  yaw: 0
+  roll: 0
+  boost: 0
+  speed: 2
   YawSensitivity: 1
-  RollSensitivity: 1
+  TiltSensitivity: 1
   PitchSensitivity: 1
   StrafeSensitivity: 1
   ThrustMod: 0.6
@@ -391,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 713460585}
-  offset: {x: 0, y: 3, z: 0.5}
+  offset: {x: 3, y: 0, z: -1}
 --- !u!81 &1449412277
 AudioListener:
   m_ObjectHideFlags: 0
@@ -477,7 +498,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2028411858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7a7da3deaa7b4f4f97bc5e1219157b7, type: 3}
   m_Name: 
